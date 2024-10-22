@@ -24,6 +24,7 @@ class HomeActivity : AppCompatActivity() {
             var name = bookName.text.toString()
             var price = bookPrice.text.toString().toDouble()
             var page = bookPageNumber.text.toString().toInt()
+//            var page = bookPageNumber.text.toString().toInt()
         }
     }
 }
