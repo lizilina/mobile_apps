@@ -9,21 +9,24 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
+
+    <CheckBox
         android:id="@+id/inStore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="is in store?"
-        android:background="@drawable/edit_text_bg"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="120dp"
-        />
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/imageUrlEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="dflksdjflkjdf"/>
 
     <Button
         android:id="@+id/okbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ok!"
-        />
+        android:text="ok!"/>
 
 </LinearLayout>

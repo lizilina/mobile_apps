@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,11 +21,18 @@ class HomeActivity : AppCompatActivity() {
         bookPrice = findViewById(R.id.bookPriceEditText)
         bookPageNumber = findViewById(R.id.bookPageEditText)
         nextBtn = findViewById(R.id.nextBt)
+
         nextBtn.setOnClickListener {
             var name = bookName.text.toString()
             var price = bookPrice.text.toString().toDouble()
-            var page = bookPageNumber.text.toString().toInt()
-//            var page = bookPageNumber.text.toString().toInt()
+            var number = bookPageNumber.text.toString().toInt()
+            val intent = Intent(this,MainActivity::class.java )
+            intent.putExtra("NAME",name)
+            intent.putExtra("PRICE", price)
+            intent.putExtra("NUMBER", number)
+            startActivity(intent)
+            finish()
+
         }
     }
 }
